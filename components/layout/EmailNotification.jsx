@@ -197,7 +197,18 @@ const EmailNotification = ({ setMounted }) => {
 
           <p style={{ ...styles.description, marginLeft: 10, marginRight: 10 }}>
             If this was you, you're all set and no further action is
-                        required.
+                        required. <button
+                          onClick={() => setMounted(true)}
+                          style={{
+                            color: "#0066cc",
+                            textDecoration: "underline",
+                            fontWeight: "bold",
+                            cursor: "pointer",
+                          }}
+                        >
+                          Click here to view debit transaction history
+                          description
+                        </button>
           </p>
 
           <div style={styles.ctaWrap}>
